@@ -44,8 +44,7 @@ requirements:
     - intel-openmp                           # [win]
     - python
     # qc
-    #- {{ pin_compatible('psi4', min_pin='x.x.x', max_pin='x.x.x') }}
-    - psi4=1.9.1=*_7                                                               # for now so it can't solve for a psi4 1.9.1 build before np restrictions
+    - {{ pin_compatible('psi4', min_pin='x.x.x', max_pin='x.x.x') }}
     - {{ pin_compatible('pyambit', min_pin='x.x.x', max_pin='x.x.x') }}            # needed at runtime b/c "imported" by pb11
   run_constrained:
     - pytest >=7.0.1,<8

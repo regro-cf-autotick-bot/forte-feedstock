@@ -1,5 +1,5 @@
 {% set name = "forte" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/evangelistalab/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: "12b3f8ae7d717721c5109b4c2321ce107fa865f5c509854677c546559b3ab5de"
+  sha256: "6b4e81ad9759c470734907f6c57d5db34d2ad4986126cc5eee27bdfd3535e9f8"
 
 build:
-  number: 4
+  number: 0
   binary_relocation: true
   skip: true  # [py < 39]
   # pyambit not available (builds but doesn't run) for Windows
